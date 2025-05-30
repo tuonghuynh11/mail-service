@@ -33,7 +33,7 @@ export const sendVerifyMailValidator = validate(
         notEmpty: true,
         trim: true,
         isLength: {
-          options: { min: 6, max: 6 },
+          options: { min: 4, max: 4 },
           errorMessage: 'OTP code must be exactly 6 characters long'
         }
       }
