@@ -1,5 +1,4 @@
 import { RoleTypeQueryFilter } from '~/constants/enums'
-import { PaginationReqQuery } from './Pagination.requests'
 
 export interface Filter {
   search: string
@@ -7,6 +6,6 @@ export interface Filter {
   order_by: string
 }
 
-export interface BaseReqQuery extends PaginationReqQuery, Filter {
+export interface BaseReqQuery extends Filter {
   type: RoleTypeQueryFilter
 }
