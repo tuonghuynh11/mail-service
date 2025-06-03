@@ -18,7 +18,7 @@ jobs:
         run: |
           # IMAGE_TAG=hmt1/twitter:v$(date +%s)
           IMAGE_TAG=hmt1/freshfit-mail-media-service:latest
-          docker build --progress=plain -t $IMAGE_TAG -f Dockerfile.dev .
+          docker build --progress=plain -t $IMAGE_TAG -f .
           echo "IMAGE_TAG=$IMAGE_TAG" >> $GITHUB_ENV
 
       - name: Print Image Tag
