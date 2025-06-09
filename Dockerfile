@@ -8,6 +8,7 @@ COPY slda-swagger.yaml .
 COPY tsconfig.json .
 COPY ecosystem.config.js .
 COPY .env.production .
+COPY .env.development .
 COPY ./src ./src
 
 RUN apk update && apk add bash
