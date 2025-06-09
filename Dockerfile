@@ -18,4 +18,5 @@ RUN npm install
 RUN npm run build
 
 
-CMD ["pm2-runtime", "start", "ecosystem.config.js", "--env", "production"]
+# CMD ["pm2-runtime", "start", "ecosystem.config.js", "--env", "production"]
+CMD ["pm2-runtime", "start", "ecosystem.config.js", "--env", "development"]
