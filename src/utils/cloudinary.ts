@@ -4,7 +4,7 @@ cloudinary.config({
   cloud_name: envConfig.cloud_name,
   api_key: envConfig.api_key,
   api_secret: envConfig.api_secret,
-  timeout: 70000 // 60 seconds
+  timeout: 70000 // 60 seconds,
 })
 export const uploadVideoToCloudinary = async (video_url: string) => {
   // try {

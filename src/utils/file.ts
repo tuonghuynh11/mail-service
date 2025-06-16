@@ -74,10 +74,10 @@ export const handleUploadImage = async (req: Request) => {
   fs.mkdirSync(folderPath)
   const form = formidable({
     uploadDir: folderPath, //Thư mục lưu ảnh tạm khi client upload
-    maxFiles: 4, //Số file được gửi lên
+    maxFiles: 1, //Số file được gửi lên
     keepExtensions: true, //Giữ lại đuôi mở rộng của file,
-    maxFileSize: 2 * 1024 * 1024, //2MB,
-    maxTotalFileSize: 2 * 1024 * 1024 * 4, //8MB
+    maxFileSize: 10 * 1024 * 1024, //10MB,
+    maxTotalFileSize: 10 * 1024 * 1024, //10MB
 
     filter: function ({ name, originalFilename, mimetype }) {
       const valid = name === 'image' && Boolean(mimetype?.includes('image'))
